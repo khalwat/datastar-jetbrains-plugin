@@ -1,18 +1,11 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
     <id>com.github.khalwat.datastarjetbrainsplugin</id>
-    <name>datastar-jetbrains-plugin</name>
+    <name>Datastar</name>
     <vendor>khalwat</vendor>
-
     <depends>com.intellij.modules.platform</depends>
-
-    <resource-bundle>messages.MyBundle</resource-bundle>
-
+    <depends>JavaScript</depends>
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="com.github.khalwat.datastarjetbrainsplugin.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
+        <javascript.webTypes source="datastar.web-types.json" enableByDefault="true"/>
     </extensions>
-
-    <applicationListeners>
-        <listener class="com.github.khalwat.datastarjetbrainsplugin.listeners.MyApplicationActivationListener" topic="com.intellij.openapi.application.ApplicationActivationListener"/>
-    </applicationListeners>
 </idea-plugin>

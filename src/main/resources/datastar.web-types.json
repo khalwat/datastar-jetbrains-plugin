@@ -1,0 +1,35 @@
+{
+  "$schema": "../../../../schema.json",
+  "name": "Datastar",
+  "version": "1.0.0",
+  "contributions": {
+    "html": {
+      "attributes": [
+        {
+          "name": "data-model"
+        },
+        {
+          "name": "data-text"
+        },
+        {
+          "name": "data-computed"
+        },
+        {
+          "name": "data-class"
+        },
+        {
+          "name": "data-bind"
+        },
+        {
+          "name": "data-store"
+        },
+        {
+          "name": "data-on"
+        },
+        {
+          "name": "data-on-click"
+        }
+      ]
+    }
+  }
+}
