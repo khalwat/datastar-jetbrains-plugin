@@ -2,32 +2,49 @@
   "$schema": "../../../../schema.json",
   "name": "Datastar",
   "version": "1.0.0",
+  "default-icon": "datastar-icon.png",
   "contributions": {
     "html": {
       "attributes": [
         {
-          "name": "data-model"
+          "virtual": true,
+          "name": "data-attributes",
+          "description": "Sets one or more attribute values using a set of key-value pairs that map to the attribute name and expression.",
+          "doc-url": "https://data-star.dev/guide/getting_started#data-attributes"
         },
         {
-          "name": "data-text"
+          "virtual": true,
+          "name": "data-attributes-*",
+          "pattern": {
+            "template": [
+              "data-attributes-",
+              {
+                "regex": ".*"
+              }
+            ]
+          },
+          "description": "Sets an element’s attribute value based on an expression.",
+          "doc-url": "https://data-star.dev/guide/getting_started#data-attributes"
         },
         {
-          "name": "data-computed"
+          "virtual": true,
+          "name": "data-bind",
+          "description": "Creates a new signal and enables two-way binding between it and the element.",
+          "doc-url": "https://data-star.dev/guide/getting_started#data-bind"
         },
         {
-          "name": "data-class"
-        },
-        {
-          "name": "data-bind"
-        },
-        {
-          "name": "data-store"
-        },
-        {
-          "name": "data-on"
-        },
-        {
-          "name": "data-on-click"
+          "virtual": true,
+          "name": "data-bind-*",
+          "pattern": {
+            "template": [
+              "data-bind-",
+              {
+                "regex": ".*"
+              }
+            ]
+          },
+          "description": "Creates a new signal and enables two-way binding between it and the element.",
+          "doc-url": "https://data-star.dev/guide/getting_started#data-bind"
         }
       ]
     }
